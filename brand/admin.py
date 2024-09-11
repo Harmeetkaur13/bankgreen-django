@@ -52,6 +52,7 @@ class CommentaryInline(admin.StackedInline):
         "details",
         "associated_contacts",
     )
+    exclude = ('from_the_website', 'subtitle', 'header', 'summary', 'details')
     fieldsets = (
         (
             "Display Configuration",
